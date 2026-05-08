@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Predictor</title>
+</head>
+<body>
+    <h2>Enter Student Data</h2>
+    <form action="/predict" method="post">
+        Study Hours per Week: <input type="number" name="study_hours_per_week"><br>
+        Sleep Hours per Day: <input type="number" name="sleep_hours_per_day"><br>
+        Attendance Percentage: <input type="number" name="attendance_percentage"><br>
+        Assignments Completed: <input type="number" name="assignments_completed"><br>
+        
+
+        Participation Level:
+        <select name="participation_level">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+        </select><br>
+
+        Internet Access:
+        <select name="internet_access">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        Parental Education:
+        <select name="parental_education">
+            <option value="High School">High School</option>
+            <option value="Master's">Master's</option>
+            <option value="PhD">PhD</option>
+        </select><br>
+
+        Extracurricular:
+        <select name="extracurricular">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        Part-time Job:
+        <select name="part_time_job">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
+
